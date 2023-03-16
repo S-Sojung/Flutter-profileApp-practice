@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/components/profile_tab.dart';
+import 'package:flutter_profile/hello_page.dart';
 import 'package:flutter_profile/theme.dart';
 
 import 'components/profile_buttons.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfilePage(),
+      home: ProfilePage(), //HelloPage()
       theme: theme(), //클래스로 감싸진게 아니라서 new 할 필요없이 함수를 바로 호출
     );
   }
